@@ -1,0 +1,173 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background: #f0f2f5;
+  color: #928a8a;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Buttons */
+.btn {
+  background: #0078d7;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+  display: inline-block;
+  margin-top: 1rem;
+}
+.btn:hover {
+  background: #005fa3;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, #0078d7, #00b6f1);
+  color: white;
+  text-align: center;
+  padding: 6rem 2rem;
+}
+.hero h1 {
+  font-size: 2.5rem;
+}
+.hero .tagline {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+/* Sections */
+section {
+  padding: 4rem 0;
+}
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Benefits */
+.benefits {
+  background: white;
+  text-align: center;
+}
+.benefits ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.benefits li {
+  background: #e8f0fe;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Products */
+.products {
+  background: #f9fafc;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.product-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  text-align: center;
+}
+.product-card h3 {
+  color: #0078d7;
+}
+.product-card a {
+  color: #0078d7;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  margin-top: 0.75rem;
+}
+
+/* Video */
+.video-demo {
+  background: #ffffff;
+  text-align: center;
+}
+.video-demo video {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+/* Contact */
+.contact {
+  background: #f0f6fc;
+}
+.contact form {
+  display: grid;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.contact input,
+.contact textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+.contact button {
+  width: fit-content;
+}
+
+/* Contact Info */
+.contact-info {
+  margin-top: 2rem;
+}
+.contact-info p {
+  margin: 0.5rem 0;
+  text-align: center;
+}
+.social-links {
+  text-align: center;
+  margin-top: 1rem;
+}
+.social-links a {
+  color: #0078d7;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #eee;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+  .benefits ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
